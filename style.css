@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+/* Características del contenedor */
+.contenedor{
+    width: 190px;
+    height: 400px;
+    background: linear-gradient(315deg, #c24e4e 0%, #ffffff 50%);
+    border-radius: 20px 0px 0px 30px;
+    box-shadow: -4px 0px 6px 0px rgb(47,47,47);
+    padding: 10px;
+    text-align: justify;
+    margin: 30px auto;
+    overflow-y: auto;
+}
+
+/* Definimos el ancho del Scroll */
+.contenedor::-webkit-scrollbar{
+    width: 20px;
+}
+
+/* Definimos el color para el componente Thumb */
+.contenedor::-webkit-scrollbar-thumb{
+    background: linear-gradient(to right, #3f0d12 0%, #a71d31 74%);
+    border-radius: 10px;
+}
+
+.contenedor::-webkit-scrollbar-thumb:hover{
+    box-shadow: 0px 0px 3px 2px rgb(230, 230, 230) inset;
+}
+
+.contenedor::-webkit-scrollbar-thumb:active{
+    box-shadow: 0px 0px 3px 2px rgb(230, 230, 230) inset;
+}
+
+/* Definimos el color para el componente Track */
+.contenedor::-webkit-scrollbar-track{
+    background-color: #a82c2c;
+}
